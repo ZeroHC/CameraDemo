@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.greenrivertech.hliu.camerademo2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+
+
+    <!--
+     If your application can use a camera or camera feature for proper
+     operation, but does not require it, you should specify this in the manifest
+      by including the android:required attribute, and setting it to false
+    -->
+    <!--
+        <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+    -->
+
+
+    <!-- allow the system to read and write external storage eg. SD card -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="net.greenrivertech.hliu.camerademo2.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
